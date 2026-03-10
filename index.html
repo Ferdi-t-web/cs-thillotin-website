@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Madrid CF - Expérience Club</title>
+    <meta
+      name="description"
+      content="Site fan Real Madrid CF inspiré de l'expérience officielle : actualités, effectif, calendrier, trophées et billetterie."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Cinzel:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a href="#home" class="logo" aria-label="Real Madrid CF">
+          <span class="logo-badge">RM</span>
+          <span>REAL MADRID</span>
+        </a>
+        <button id="menuBtn" class="menu-btn" aria-label="Ouvrir le menu">☰</button>
+        <nav id="nav" class="nav">
+          <a href="#news">Actualités</a>
+          <a href="#matches">Match Center</a>
+          <a href="#squad">Équipe</a>
+          <a href="#titles">Palmarès</a>
+          <a href="#bernabeu">Bernabéu</a>
+          <a href="#tickets">Billetterie</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">OFFICIAL-STYLE FAN EXPERIENCE</p>
+            <h1>Un club. Une légende. Une obsession de victoire.</h1>
+            <p>
+              Vivez l’intensité madridista avec une interface premium : dernières infos,
+              calendrier, stars de l’effectif et immersion Bernabéu.
+            </p>
+            <div class="hero-actions">
+              <a href="#matches" class="btn primary">Voir les prochains matchs</a>
+              <a href="#tickets" class="btn ghost">Réserver un ticket</a>
+            </div>
+          </div>
+          <aside class="hero-score">
+            <p class="mini">DERNIER MATCH</p>
+            <h2>Real Madrid <span>3 - 1</span> Atlético</h2>
+            <p>LaLiga • Santiago Bernabéu</p>
+            <ul>
+              <li>Bellingham 22'</li>
+              <li>Vinícius Jr. 61'</li>
+              <li>Rodrygo 88'</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="news" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Actualités à la une</h2>
+            <a href="#" class="text-link">Voir tout</a>
+          </div>
+          <div class="news-grid">
+            <article class="news-card featured">
+              <img src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?auto=format&fit=crop&w=1400&q=80" alt="Joueurs célébrant un but" />
+              <div>
+                <p>Champions League</p>
+                <h3>Le Real Madrid qualifié pour les demi-finales</h3>
+              </div>
+            </article>
+            <article class="news-card">
+              <img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=900&q=80" alt="Entraînement au centre sportif" />
+              <div>
+                <p>Entraînement</p>
+                <h3>Session intensive avant le Clasico</h3>
+              </div>
+            </article>
+            <article class="news-card">
+              <img src="https://images.unsplash.com/photo-1543357480-c60d40007a3f?auto=format&fit=crop&w=900&q=80" alt="Supporters dans les tribunes" />
+              <div>
+                <p>Fans</p>
+                <h3>Le Bernabéu affiche complet ce week-end</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="matches" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Match Center</h2>
+            <button id="toggleView" class="chip">Vue compacte</button>
+          </div>
+          <div id="matchList" class="match-list">
+            <article>
+              <p>14 Mai 2026</p>
+              <h3>Real Madrid vs FC Barcelona</h3>
+              <span>LaLiga • 21:00</span>
+            </article>
+            <article>
+              <p>20 Mai 2026</p>
+              <h3>Inter Milan vs Real Madrid</h3>
+              <span>UCL • 21:00</span>
+            </article>
+            <article>
+              <p>25 Mai 2026</p>
+              <h3>Real Madrid vs Sevilla</h3>
+              <span>LaLiga • 20:00</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="squad" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Équipe première</h2>
+            <div class="filters" id="squadFilters">
+              <button class="active" data-pos="all">Tous</button>
+              <button data-pos="gk">GK</button>
+              <button data-pos="def">DEF</button>
+              <button data-pos="mid">MID</button>
+              <button data-pos="att">ATT</button>
+            </div>
+          </div>
+          <div class="player-grid">
+            <article data-pos="gk"><strong>1</strong><h3>Courtois</h3><p>Gardien</p></article>
+            <article data-pos="def"><strong>2</strong><h3>Carvajal</h3><p>Défenseur</p></article>
+            <article data-pos="def"><strong>22</strong><h3>Rüdiger</h3><p>Défenseur</p></article>
+            <article data-pos="mid"><strong>8</strong><h3>Valverde</h3><p>Milieu</p></article>
+            <article data-pos="mid"><strong>5</strong><h3>Bellingham</h3><p>Milieu</p></article>
+            <article data-pos="att"><strong>7</strong><h3>Vinícius Jr.</h3><p>Attaquant</p></article>
+            <article data-pos="att"><strong>9</strong><h3>Mbappé</h3><p>Attaquant</p></article>
+            <article data-pos="att"><strong>11</strong><h3>Rodrygo</h3><p>Attaquant</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="titles" class="section alt">
+        <div class="container">
+          <h2>Palmarès</h2>
+          <div class="title-grid">
+            <article><span>15</span><p>Champions League</p></article>
+            <article><span>36</span><p>LaLiga</p></article>
+            <article><span>20</span><p>Copa del Rey</p></article>
+            <article><span>9</span><p>Coupe du monde des clubs</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="bernabeu" class="section stadium">
+        <div class="container stadium-grid">
+          <div>
+            <h2>Santiago Bernabéu</h2>
+            <p>
+              Une arène futuriste : toit rétractable, façade LED, expérience immersive et
+              ambiance unique pour chaque grande nuit européenne.
+            </p>
+            <ul>
+              <li>Capacité : 80 000+</li>
+              <li>Musée & Tour premium</li>
+              <li>Fan zone interactive</li>
+            </ul>
+          </div>
+          <img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&w=1200&q=80" alt="Vue de stade en soirée" />
+        </div>
+      </section>
+
+      <section id="tickets" class="section alt">
+        <div class="container">
+          <h2>Billetterie</h2>
+          <form id="ticketForm" class="ticket-form" novalidate>
+            <label>Nom<input type="text" name="name" required minlength="2" /></label>
+            <label>Email<input type="email" name="email" required /></label>
+            <label>Match
+              <select name="match" required>
+                <option value="">Choisir un match</option>
+                <option>Real Madrid vs FC Barcelona</option>
+                <option>Real Madrid vs Sevilla</option>
+                <option>Real Madrid vs Bayern Munich</option>
+              </select>
+            </label>
+            <button class="btn primary" type="submit">Envoyer la demande</button>
+            <p id="ticketMsg" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <p>© 2026 Real Madrid fan experience (non officiel). Hala Madrid y nada más.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
